@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom"; // Import Link
 
 const Navbar = () => {
   return (
@@ -15,18 +16,26 @@ const Navbar = () => {
         <span>OncoNPC</span>
       </div>
       <div>
-        <a
-          href="/onconpc_visualize/tutorial"
-          style={{ color: "black", marginRight: "1rem" }}
+        <Link
+          to="/tutorial"
+          style={{
+            color: "black",
+            marginRight: "1rem",
+            textDecoration: "none",
+          }} // Added textDecoration: "none" to mimic <a> tag styling
         >
           Tutorial
-        </a>
-        <a
-          href="/onconpc_visualize/prediction"
-          style={{ color: "black", marginRight: "1rem" }}
+        </Link>
+        <Link
+          to="/prediction"
+          style={{
+            color: "black",
+            marginRight: "1rem",
+            textDecoration: "none",
+          }} // Added textDecoration: "none" for consistency
         >
           Prediction Tool
-        </a>
+        </Link>
       </div>
     </nav>
   );
