@@ -1,22 +1,22 @@
 import logo from "./logo.svg";
 import "./App.css";
 import Navbar from "./Navbar";
+import Gradio from "./Gradio";
+import Tutorial from "./Tutorial";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <div style={{ flexGrow: 1 }}>
-        <iframe
-          title="onconpc"
-          className="gradio"
-          src="https://jenniferzhou33-onconpc-visualization.hf.space"
-          frameborder="0"
-          width="850"
-          height="450"
-        ></iframe>
+    <Router>
+      <div className="App">
+        <Navbar />
+        <Routes>
+          <Route path="/prediction" element={<Gradio/>} />
+          <Route path="/tutorial" element={<Tutorial />} />
+        </Routes>
       </div>
-    </div>
+    </Router>
   );
 }
 

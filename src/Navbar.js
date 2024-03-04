@@ -15,10 +15,10 @@ const Navbar = () => {
         <span>OncoNPC</span>
       </div>
       <div>
-        <a href="/" style={{ color: "black", marginRight: "1rem" }}>
+        <a href="/tutorial" style={{ color: "black", marginRight: "1rem" }}>
           Tutorial
         </a>
-        <a href="/about" style={{ color: "black", marginRight: "1rem" }}>
+        <a href="/prediction" style={{ color: "black", marginRight: "1rem" }}>
           Prediction Tool
         </a>
       </div>
