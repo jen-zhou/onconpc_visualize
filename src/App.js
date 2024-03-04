@@ -12,8 +12,8 @@ function App() {
       <div className="App">
         <Navbar />
         <Routes>
-          <Route path="/prediction" element={<Gradio/>} />
-          <Route path="/tutorial" element={<Tutorial />} />
+          <Route path="/onconpc_visualize/prediction" element={<Gradio/>} />
+          <Route path="/onconpc_visualize/tutorial" element={<Tutorial />} />
         </Routes>
       </div>
     </Router>
