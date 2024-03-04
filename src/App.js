@@ -5,15 +5,14 @@ import Gradio from "./Gradio";
 import Tutorial from "./Tutorial";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-
 function App() {
   return (
-    <Router>
+    <Router basename="/onconpc_visualize">
       <div className="App">
         <Navbar />
         <Routes>
-          <Route path="/onconpc_visualize/prediction" element={<Gradio/>} />
-          <Route path="/onconpc_visualize/tutorial" element={<Tutorial />} />
+          <Route path="/prediction" element={<Gradio />} />
+          <Route path="/tutorial" element={<Tutorial />} />
         </Routes>
       </div>
     </Router>
